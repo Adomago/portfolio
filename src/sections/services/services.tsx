@@ -1,35 +1,89 @@
-import { StarIcon } from "@radix-ui/react-icons";
+import {
+	FileIcon,
+	FilePlusIcon,
+	FileTextIcon,
+	GitHubLogoIcon,
+	PersonIcon,
+	StarIcon,
+} from "@radix-ui/react-icons";
 import Section from "@/components/layout/section";
-import { Card, CardContent, CardTitle } from "@/components/ui/card";
+import { CleanCodeCardContent } from "@/sections/services/_components/clean-code-card-content";
+import {
+	ConvertingCardContent,
+	type ConvertingCardIconSet,
+} from "@/sections/services/_components/converting-card-content";
+import { ServiceCard } from "@/sections/services/_components/service-card";
+import { ServicesCardContent } from "@/sections/services/_components/services-card-content";
+import type { ServiceItem } from "@/sections/services/_constants/services";
 
 export default function Services() {
-	const skillGroups = [
+	const programmingSkills: ServiceItem[] = [
 		{
-			title: "Programming",
-			items: ["Python", "JavaScript", "C++", "Java"],
+			name: "Python",
+			description: "Core language for scripting, data workflows, and AI projects.",
 		},
 		{
-			title: "Web",
-			items: ["React", "HTML", "CSS"],
+			name: "JavaScript",
+			description: "Frontend and full-stack web application development.",
 		},
 		{
-			title: "Machine Learning",
-			items: [
-				"Computer Vision",
-				"NLP",
-				"Machine Learning",
-				"Pandas",
-				"NumPy",
-				"Scikit-learn",
-				"TensorFlow",
-				"PyTorch",
-			],
+			name: "C++",
+			description: "Performance-focused programming and algorithmic problem-solving.",
 		},
 		{
-			title: "Tools",
-			items: ["Supabase", "Firebase", "GitHub", "VS Code", "Google Colab"],
+			name: "Java",
+			description: "Object-oriented programming and foundational software design.",
 		},
 	];
+
+	const webSkills: ServiceItem[] = [
+		{
+			name: "React",
+			description: "Component-based interfaces with modern reusable patterns.",
+		},
+		{
+			name: "HTML",
+			description: "Semantic and accessible page structure.",
+		},
+		{
+			name: "CSS",
+			description: "Responsive styling and polished UI presentation.",
+		},
+	];
+
+	const machineLearningSkills: ServiceItem[] = [
+		{
+			name: "Computer Vision",
+			description: "Image-based models and classification tasks.",
+		},
+		{
+			name: "NLP",
+			description: "Language-focused pipelines and model experimentation.",
+		},
+		{
+			name: "Pandas & NumPy",
+			description: "Data manipulation and numerical analysis for model workflows.",
+		},
+		{
+			name: "Scikit-learn",
+			description: "Classical ML modeling and evaluation.",
+		},
+		{
+			name: "TensorFlow & PyTorch",
+			description: "Deep learning model training and iteration.",
+		},
+	];
+
+	const toolIcons: ConvertingCardIconSet = {
+		destination: { id: "engineer", Icon: PersonIcon },
+		hub: { id: "github", Icon: GitHubLogoIcon },
+		sources: [
+			{ id: "vscode", Icon: FileTextIcon },
+			{ id: "supabase", Icon: FilePlusIcon },
+			{ id: "firebase", Icon: FileIcon },
+			{ id: "colab", Icon: FileTextIcon },
+		],
+	};
 
 	return (
 		<Section
@@ -40,23 +94,30 @@ export default function Services() {
 			badgeText="Technical stack"
 			badgeIcon={<StarIcon aria-hidden="true" />}
 		>
-			{skillGroups.map((group) => (
-				<Card key={group.title} className="h-full">
-					<CardContent className="space-y-3">
-						<CardTitle as="h3">{group.title}</CardTitle>
-						<ul className="flex flex-wrap gap-2">
-							{group.items.map((item) => (
-								<li
-									key={item}
-									className="rounded-md border border-border/80 bg-card-muted/40 px-2.5 py-1 text-xs text-foreground/80"
-								>
-									{item}
-								</li>
-							))}
-						</ul>
-					</CardContent>
-				</Card>
-			))}
+			<ServiceCard
+				name="Programming"
+				description="Python, JavaScript, C++, and Java for end-to-end software solutions."
+				className="col-span-1"
+				background={<ServicesCardContent items={programmingSkills} />}
+			/>
+			<ServiceCard
+				name="Web"
+				description="Modern frontend fundamentals centered on React, HTML, and CSS."
+				className="col-span-1"
+				background={<ServicesCardContent items={webSkills} maxVisible={2} />}
+			/>
+			<ServiceCard
+				name="Machine Learning"
+				description="From classical ML to deep learning across CV and NLP tasks."
+				className="col-span-1"
+				background={<CleanCodeCardContent items={machineLearningSkills} />}
+			/>
+			<ServiceCard
+				name="Tools"
+				description="Tooling stack built around GitHub, VS Code, Supabase, Firebase, and Colab."
+				className="col-span-1"
+				background={<ConvertingCardContent icons={toolIcons} />}
+			/>
 		</Section>
 	);
 }

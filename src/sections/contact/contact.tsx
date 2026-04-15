@@ -52,6 +52,17 @@ export default function Contact() {
 							linkedin.com/in/alisandro-domingo-0b54a83b9
 						</a>
 					</p>
+					<p className="text-sm text-foreground/80">
+						GitHub:{" "}
+						<a
+							className="hover:text-foreground"
+							href="https://github.com/Adomago"
+							target="_blank"
+							rel="noreferrer"
+						>
+							github.com/Adomago
+						</a>
+					</p>
 				</CardContent>
 			</Card>
 			<ContactFormCard />
