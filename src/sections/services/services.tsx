@@ -81,7 +81,7 @@ export default function Services() {
 			{ id: "vscode", Icon: FileTextIcon },
 			{ id: "supabase", Icon: FilePlusIcon },
 			{ id: "firebase", Icon: FileIcon },
-			{ id: "colab", Icon: GitHubLogoIcon },
+			{ id: "colab", Icon: FileTextIcon },
 		],
 	};
 
