@@ -24,7 +24,7 @@ export default function Footer() {
 				<div className="flex flex-col gap-4">
 					<div className="flex flex-col gap-3">
 						<div className="flex gap-2 items-center text-foreground">
-							<LogoIcon className="size-4" />
+							<LogoIcon className="h-auto text-foreground !w-10" />
 							<p className="text-sm font-medium">Alisandro N. Domingo</p>
 						</div>
 						<div className="space-y-1 text-xs text-foreground/70 leading-relaxed max-w-sm">

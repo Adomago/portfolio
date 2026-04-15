@@ -273,7 +273,7 @@ export function Navbar() {
 					role="menuitem"
 				>
 					<div className="flex items-center gap-2">
-						<LogoIcon className="size-4" />
+						<LogoIcon className="h-auto text-foreground !w-10" />
 						<span>Alisandro N. Domingo</span>
 					</div>
 				</Button>

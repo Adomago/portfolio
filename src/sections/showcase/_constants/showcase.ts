@@ -1,3 +1,9 @@
+import coursera1 from './coursera1-1.png';
+import coursera2 from './coursera2-1.png';
+import coursera3 from './coursera3-1.png';
+import coursera4 from './coursera4-1.png';
+import coursera5 from './coursera5-1.png';
+
 export type ShowcaseHighlight = {
 	title: string;
 	issuer: string;
@@ -7,28 +13,28 @@ export type ShowcaseHighlight = {
 
 export const showcaseHighlights: ShowcaseHighlight[] = [
 	{
-		title: "Certificate Title 01",
-		issuer: "Issuing Organization",
-		image: "/placeholder-1.jpg",
+		title: "Introduction to Computer Science and Programming",
+		issuer: "University of London",
+		image: coursera1,
 	},
 	{
-		title: "Certificate Title 02",
-		issuer: "Issuing Organization",
-		image: "/placeholder-1.jpg",
+		title: "Cyber-Physical Systems: Modeling and Simulation",
+		issuer: "University of California, Santa Cruz",
+		image: coursera2,
 	},
 	{
-		title: "Certificate Title 03",
-		issuer: "Issuing Organization",
-		image: "/placeholder-2.jpg",
+		title: "Data Warehouse Concepts, Design, and Data Integration",
+		issuer: "University of Colorado System",
+		image: coursera3,
 	},
 	{
-		title: "Certificate Title 04",
-		issuer: "Issuing Organization",
-		image: "/placeholder-2.jpg",
+		title: "Introduction to Data Science in Python",
+		issuer: "University of Michigan",
+		image: coursera4,
 	},
 	{
-		title: "Certificate Title 05",
-		issuer: "Issuing Organization",
-		image: "/placeholder-1.jpg",
+		title: "Engineering Practices for Building Quality Software",
+		issuer: "University of Minnesota",
+		image: coursera5,
 	},
 ];

@@ -11,60 +11,10 @@ export default function Contact() {
 			id="contact"
 			title="Contact"
 			description="Feel free to connect for collaboration opportunities, project discussions, or academic and industry partnerships."
-			className="grid grid-cols-1 gap-4 lg:grid-cols-2 overflow-hidden"
+			className="flex justify-center overflow-hidden"
 			badgeText="Contact"
 			badgeIcon={<PaperPlaneIcon aria-hidden="true" className="size-3.5" />}
 		>
-			<Card className="z-10 h-fit">
-				<CardContent className="space-y-3">
-					<p className="text-sm text-foreground/80">
-						Mobile:{" "}
-						<a className="hover:text-foreground" href="tel:+639763582988">
-							+63 9763582988
-						</a>
-					</p>
-					<p className="text-sm text-foreground/80">
-						Email:{" "}
-						<a
-							className="hover:text-foreground"
-							href="mailto:andomingo@mymail.mapua.edu.ph"
-						>
-							andomingo@mymail.mapua.edu.ph
-						</a>
-					</p>
-					<p className="text-sm text-foreground/80">
-						Alt Email:{" "}
-						<a
-							className="hover:text-foreground"
-							href="mailto:alisandrodomingo@gmail.com"
-						>
-							alisandrodomingo@gmail.com
-						</a>
-					</p>
-					<p className="text-sm text-foreground/80">
-						LinkedIn:{" "}
-						<a
-							className="hover:text-foreground"
-							href="https://www.linkedin.com/in/alisandro-domingo-0b54a83b9"
-							target="_blank"
-							rel="noreferrer"
-						>
-							linkedin.com/in/alisandro-domingo-0b54a83b9
-						</a>
-					</p>
-					<p className="text-sm text-foreground/80">
-						GitHub:{" "}
-						<a
-							className="hover:text-foreground"
-							href="https://github.com/Adomago"
-							target="_blank"
-							rel="noreferrer"
-						>
-							github.com/Adomago
-						</a>
-					</p>
-				</CardContent>
-			</Card>
 			<ContactFormCard />
 			<GridPattern
 				squares={[

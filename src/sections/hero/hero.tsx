@@ -185,10 +185,10 @@ export default function Hero() {
 			className="relative flex h-[55vh] md:h-[50vh] w-full px-4 md:px-16 flex-col items-center justify-center gap-4"
 		>
 			<div className="relative z-10 flex flex-col items-center gap-2">
-				<div style={{visibility: "hidden"}} ref={badgeRef} className="w-fit">
+				<div style={{visibility: "hidden"}} ref={badgeRef} className="w-fit scale-120">
 					<ShinyBadge>
 						<FrameIcon aria-hidden="true" className="size-3.5" />
-						Computer Science Student · AI Specialization
+						BS Computer Science with Specialization in AI
 					</ShinyBadge>
 				</div>
 				<h1
@@ -196,15 +196,14 @@ export default function Hero() {
 					ref={titleRef}
 					className="text-3xl text-center text-foreground font-medium text-balance max-w-3xl"
 				>
-					Alisandro N. Domingo — Building practical AI and software solutions.
+					Alisandro N. Domingo 
 				</h1>
 				<p
 					style={{ visibility: "hidden" }}
 					ref={descriptionRef}
 					className="text-base md:text-lg text-center text-foreground/70 font-medium text-balance leading-relaxed max-w-xl"
 				>
-					I design and develop intelligent, user-focused systems across web and
-					machine learning, from research prototypes to production-ready platforms.
+					Full Stack Developer | AI-Driven Solutions
 				</p>
 			</div>
 			<div ref={actionsRef} className="relative z-10  flex items-center gap-2">

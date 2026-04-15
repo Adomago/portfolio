@@ -5,7 +5,7 @@ import Footer from "@/sections/footer/footer";
 import Hero from "@/sections/hero/hero";
 import Services from "@/sections/services/services";
 import Showcase from "@/sections/showcase/showcase";
-import Works from "@/sections/works/works";
+import Works from "@/sections/works/works-section";
 
 export const Route = createFileRoute("/")({
 	component: App,

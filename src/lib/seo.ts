@@ -38,8 +38,8 @@ export type BlogSeoPayload = {
 };
 
 const SITE_URL = "https://your-domain.com";
-const SITE_NAME = "Your Name";
-const DEFAULT_TITLE = "Your Name — Your Role";
+const SITE_NAME = "Alisandro Domingo Portfolio";
+const DEFAULT_TITLE = "Alisandro Domingo";
 const DEFAULT_DESCRIPTION =
 	"Use this space to describe the kind of work you do, the industries you serve, and what makes your approach unique.";
 const DEFAULT_KEYWORDS = [
@@ -138,9 +138,8 @@ export function getRootSeo(): HeadTags {
 
 	const links: LinkTag[] = [
 		{ rel: "canonical", href: canonical },
-		{ rel: "icon", href: "/favicon.ico" },
-		{ rel: "icon", href: "/favicon-96x96.png", sizes: "96x96" },
-		{ rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
+		{ rel: "icon", href: "/logo.svg", type: "image/svg+xml" }, // Points to your new SVG
+		{ rel: "apple-touch-icon", href: "/logo.svg" }, // Apple devices can use this too
 		{ rel: "manifest", href: "/site.webmanifest" },
 	];
 

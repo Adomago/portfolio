@@ -1,8 +1,5 @@
 import {
 	FigmaLogoIcon,
-	FileIcon,
-	FilePlusIcon,
-	FileTextIcon,
 	GitHubLogoIcon,
 	PersonIcon,
 } from "@radix-ui/react-icons";
@@ -13,6 +10,32 @@ import {
 	type ConvertingCardIconSet,
 } from "@/sections/services/_components/converting-card-content";
 import { ServicesCardContent } from "@/sections/services/_components/services-card-content";
+import type { SVGProps } from "react";
+
+const VSCodeIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em" {...props}>
+    <path d="M23.15 2.587L18.21.21a1.494 1.494 0 0 0-1.705.29l-9.46 8.63-4.12-3.128a.999.999 0 0 0-1.276.057L.327 7.261A1 1 0 0 0 .326 8.74L3.899 12 .326 15.26a1 1 0 0 0 .001 1.479L1.65 17.94a.999.999 0 0 0 1.276.057l4.12-3.128 9.46 8.63a1.492 1.492 0 0 0 1.704.29l4.942-2.377A1.5 1.5 0 0 0 24 19.88V4.12a1.5 1.5 0 0 0-.85-1.533zm-5.146 14.861L10.826 12l7.178-5.448v10.896z"/>
+  </svg>
+);
+
+const JupyterIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em" {...props}>
+    <path d="M7.157 22.201A1.784 1.784 0 0 1 5.378 24a1.784 1.784 0 0 1-1.78-1.799 1.784 1.784 0 0 1 1.78-1.799 1.784 1.784 0 0 1 1.779 1.799zM20.067 1.835a1.202 1.202 0 0 1-1.201 1.202 1.202 1.202 0 0 1-1.202-1.202A1.202 1.202 0 0 1 18.866.633a1.202 1.202 0 0 1 1.201 1.202zm-2.921 1.781a1.837 1.837 0 0 1-2.258 1.253 1.837 1.837 0 0 1-1.254-2.258 1.837 1.837 0 0 1 2.258-1.254 1.837 1.837 0 0 1 1.254 2.259zM12 3.732c-2.933 0-5.616.936-7.801 2.52l.5.866A9.432 9.432 0 0 1 12 5.195a9.432 9.432 0 0 1 7.301 1.923l.5-.866A12.033 12.033 0 0 0 12 3.732zm0 16.536a9.432 9.432 0 0 1-7.301-1.923l-.5.866A12.033 12.033 0 0 0 12 21.268c2.933 0 5.616-.936 7.801-2.52l-.5-.866A9.432 9.432 0 0 1 12 20.268z"/>
+  </svg>
+);
+
+const FirebaseIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em" {...props}>
+    <path d="M3.89 15.672L6.255.461A.542.542 0 0 1 7.27.288l2.543 4.771zm16.794 3.692l-2.25-14a.54.54 0 0 0-.919-.295L3.316 19.365l7.856 4.427a1.621 1.621 0 0 0 1.588 0zM14.3 7.147l-1.82-3.482a.542.542 0 0 0-.96 0L3.53 17.984z"/>
+  </svg>
+);
+
+const SupabaseIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em" {...props}>
+    <path d="M11.9 1.036c-.015-.986-1.26-1.41-1.874-.637L.764 12.05C.111 12.888.637 14.097 1.686 14.097h9.3c.5 0 .906.405.906.905l.007 8.963c.015.986 1.26 1.409 1.874.636l9.262-11.649c.653-.838.127-2.048-.922-2.048h-9.3a.906.906 0 0 1-.906-.906L11.9 1.036z"/>
+  </svg>
+);
+
 
 export interface ServiceItem {
 	name: string;
@@ -39,20 +62,24 @@ const convertingCardIcons: ConvertingCardIconSet = {
 	sources: [
 		{
 			id: "brief",
-			Icon: FileTextIcon,
+			Icon: VSCodeIcon,
 		},
 		{
 			id: "spec",
-			Icon: FilePlusIcon,
+			Icon: JupyterIcon,
 		},
 		{
 			id: "assets",
-			Icon: FileIcon,
+			Icon: FirebaseIcon,
+		},
+		    {
+		id: "supabase",
+		Icon: SupabaseIcon,
 		},
 		{
 			id: "repo",
 			Icon: GitHubLogoIcon,
-		},
+		}
 	],
 };
 

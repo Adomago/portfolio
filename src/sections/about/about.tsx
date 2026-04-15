@@ -1,74 +1,95 @@
 import { PersonIcon } from "@radix-ui/react-icons";
 import Section from "@/components/layout/section";
 import { Badge } from "@/components/ui/badge";
-import { Card, CardContent, CardDescription, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
+
+const focusAreas = [
+    "Computer Science",
+    "Algorithmic Problem-Solving",
+    "Artificial Intelligence",
+    "Machine Learning",
+    "Full-Stack Development",
+    "Applied Intelligent Systems",
+];
+
+const timeline = [
+    {
+        period: "2010 – 2021",
+        school: "Divine Light Academy",
+        detail: "Molino Campus · Grades 8–10 with Honors",
+    },
+    {
+        period: "2021 – 2023",
+        school: "Mapúa University — Senior High",
+        detail: "Grade 11 with Honors · Grade 12 with High Honors",
+    },
+    {
+        period: "2023 – Present",
+        school: "Mapúa University",
+        detail: "BS Computer Science (AI) · Expected Sep 2026 · GWA 1.79",
+    },
+];
 
 export default function About() {
-	return (
-		<Section
-			id="about"
-			title="About Me"
-			description="I'm Alisandro N. Domingo, a Computer Science student specializing in Artificial Intelligence and building practical software solutions."
-			className="grid grid-cols-1 gap-4 md:grid-cols-2"
-			badgeText="Profile"
-			badgeIcon={<PersonIcon aria-hidden="true" className="size-3.5" />}
-		>
-			<Card>
-				<CardContent className="space-y-4">
-					<div>
-						<CardTitle as="h3">Alisandro N. Domingo</CardTitle>
-						<CardDescription className="text-foreground/60">
-							Makati City, Metro Manila
-						</CardDescription>
-					</div>
-					<p className="text-sm text-foreground/80 leading-relaxed">
-						I build practical, user-focused software by combining computer
-						science fundamentals with applied AI and web engineering.
-					</p>
-					<div className="flex flex-wrap gap-2">
-						<Badge variant="secondary" size="sm">
-							AI-focused CS Student
-						</Badge>
-						<Badge variant="secondary" size="sm">
-							Project-driven Builder
-						</Badge>
-					</div>
-					<div>
-						<p className="text-xs uppercase tracking-wide text-foreground/50">
-							Education
-						</p>
-						<p className="mt-1 text-sm text-foreground/80">
-							Mapúa University — BS Computer Science (AI specialization)
-						</p>
-						<p className="text-sm text-foreground/70">
-							Expected Graduation: September 2026 · Running GWA: 1.7900
-						</p>
-					</div>
-				</CardContent>
-			</Card>
-			<Card>
-				<CardContent className="space-y-4">
-					<div>
-						<p className="text-xs uppercase tracking-wide text-foreground/50">
-							Areas of Interest
-						</p>
-						<ul className="mt-2 space-y-1 text-sm text-foreground/80 leading-relaxed">
-							<li>Computer Science and problem-solving</li>
-							<li>Artificial Intelligence and machine learning applications</li>
-							<li>Software development for real-world impact</li>
-						</ul>
-					</div>
-					<div>
-						<p className="text-xs uppercase tracking-wide text-foreground/50">
-							Earlier Education
-						</p>
-						<p className="mt-1 text-sm text-foreground/70">
-							Completed basic and senior high education with honors in Makati
-							before starting university studies.
-						</p>
-					</div>
-				</CardContent>
-			</Card>
-		</Section>
-	);
+    return (
+        <Section
+            id="about"
+            title="About Me"
+			description="Meet the developer behind the code."
+            badgeText="Profile"
+            badgeIcon={<PersonIcon aria-hidden="true" className="size-3.5" />}
+            className="grid grid-cols-1 gap-4 md:grid-cols-2"
+        >
+            {/* Left — identity + focus areas */}
+            <Card>
+                <CardContent className="space-y-5 pt-6">
+                    <div className="space-y-1">
+                        <h3 className="text-base font-semibold tracking-tight">
+                            Alisandro N. Domingo
+                        </h3>
+                        <p className="text-sm text-foreground/55">Makati City, Metro Manila</p>
+                    </div>
+
+                    <p className="text-sm text-foreground/75 leading-relaxed">
+						Hi! I'm Ali, a third-year CS student at Mapúa University. I'm always on the lookout for new problems to tackle and ways to use my skills to solve them!
+                    </p>
+
+                    <div className="border-t border-border/40 pt-4 space-y-2">
+                        <p className="text-[11px] uppercase tracking-widest text-foreground/40 font-medium">
+                            Focus Areas
+                        </p>
+                        <div className="flex flex-wrap gap-2">
+                            {focusAreas.map((area) => (
+                                <Badge key={area} variant="secondary" size="sm">
+                                    {area}
+                                </Badge>
+                            ))}
+                        </div>
+                    </div>
+                </CardContent>
+            </Card>
+
+            {/* Right — education timeline */}
+            <Card>
+                <CardContent className="pt-6">
+                    <p className="text-[11px] uppercase tracking-widest text-foreground/40 font-medium mb-4">
+                        Background
+                    </p>
+
+                    <ol className="relative space-y-5 border-l border-border/40 pl-4">
+                        {timeline.map(({ period, school, detail }, i) => (
+                            <li key={i} className="relative">
+                                <span className="absolute -left-[17px] top-1.5 size-2 rounded-full bg-border" />
+                                <p className="text-[11px] text-foreground/40 tracking-wide mb-0.5">
+                                    {period}
+                                </p>
+                                <p className="text-sm font-medium text-foreground/85">{school}</p>
+                                <p className="text-xs text-foreground/55 leading-relaxed">{detail}</p>
+                            </li>
+                        ))}
+                    </ol>
+                </CardContent>
+            </Card>
+        </Section>
+    );
 }
