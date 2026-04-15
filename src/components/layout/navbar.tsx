@@ -15,12 +15,10 @@ import { cn } from "@/lib/utils";
 registerGsapPlugins();
 
 const NAV_LINKS = [
-	{ label: "Services", target: "#services" },
-	{ label: "Works", target: "#works" },
-	{ label: "Showcase", target: "#showcase" },
-	{ label: "Testimonials", target: "#testimonials" },
-	{ label: "FAQ", target: "#faq" },
-	{ label: "Blog", target: "#blog" },
+	{ label: "About Me", target: "#about" },
+	{ label: "Skills", target: "#services" },
+	{ label: "Projects", target: "#works" },
+	{ label: "Certificates", target: "#certificates" },
 ] as const;
 
 const colorWithOpacity = (token: string, opacity: number) => {
@@ -276,12 +274,12 @@ export function Navbar() {
 				>
 					<div className="flex items-center gap-2">
 						<LogoIcon className="size-4" />
-						<span>Your Name</span>
+						<span>Alisandro N. Domingo</span>
 					</div>
 				</Button>
 
 				<div
-				className="hidden absolute left-1/2 -translate-x-1/2 md:flex items-center gap-2"
+					className="hidden absolute left-1/2 -translate-x-1/2 md:flex items-center gap-2"
 					role="menubar"
 					aria-label="Desktop navigation"
 				>
