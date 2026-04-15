@@ -1,5 +1,6 @@
 import { PersonIcon } from "@radix-ui/react-icons";
 import Section from "@/components/layout/section";
+import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardTitle } from "@/components/ui/card";
 
 export default function About() {
@@ -13,12 +14,24 @@ export default function About() {
 			badgeIcon={<PersonIcon aria-hidden="true" className="size-3.5" />}
 		>
 			<Card>
-				<CardContent className="space-y-3">
+				<CardContent className="space-y-4">
 					<div>
 						<CardTitle as="h3">Alisandro N. Domingo</CardTitle>
 						<CardDescription className="text-foreground/60">
 							Makati City, Metro Manila
 						</CardDescription>
+					</div>
+					<p className="text-sm text-foreground/80 leading-relaxed">
+						I build practical, user-focused software by combining computer
+						science fundamentals with applied AI and web engineering.
+					</p>
+					<div className="flex flex-wrap gap-2">
+						<Badge variant="secondary" size="sm">
+							AI-focused CS Student
+						</Badge>
+						<Badge variant="secondary" size="sm">
+							Project-driven Builder
+						</Badge>
 					</div>
 					<div>
 						<p className="text-xs uppercase tracking-wide text-foreground/50">
@@ -34,15 +47,15 @@ export default function About() {
 				</CardContent>
 			</Card>
 			<Card>
-				<CardContent className="space-y-3">
+				<CardContent className="space-y-4">
 					<div>
 						<p className="text-xs uppercase tracking-wide text-foreground/50">
 							Areas of Interest
 						</p>
-						<ul className="mt-2 space-y-1 text-sm text-foreground/80">
-							<li>Computer Science</li>
-							<li>Artificial Intelligence</li>
-							<li>Software Development</li>
+						<ul className="mt-2 space-y-1 text-sm text-foreground/80 leading-relaxed">
+							<li>Computer Science and problem-solving</li>
+							<li>Artificial Intelligence and machine learning applications</li>
+							<li>Software development for real-world impact</li>
 						</ul>
 					</div>
 					<div>
@@ -50,8 +63,8 @@ export default function About() {
 							Earlier Education
 						</p>
 						<p className="mt-1 text-sm text-foreground/70">
-							Completed basic and senior high education with honors in Makati
-							before starting university studies.
+							Completed basic and senior high education with honors in Makati,
+							which built a strong foundation before starting university studies.
 						</p>
 					</div>
 				</CardContent>
