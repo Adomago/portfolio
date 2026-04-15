@@ -1,35 +1,34 @@
 export type ShowcaseHighlight = {
 	title: string;
-	description: string;
-	src: string;
-	poster: string;
+	issuer: string;
+	image: string;
 	className?: string;
-	projectUrl?: string;
 };
 
 export const showcaseHighlights: ShowcaseHighlight[] = [
 	{
-		title: "Showreel Highlight 01",
-		description:
-			"Swap in a looping cut from your hero campaign, launch film, or motion study to set the tone.",
-		src: "",
-		poster: "/placeholder-1.jpg",
-		className: "lg:col-span-2 lg:row-span-2",
+		title: "Certificate Title 01",
+		issuer: "Issuing Organization",
+		image: "/placeholder-1.jpg",
 	},
 	{
-		title: "Showreel Highlight 02",
-		description:
-			"Use this slot for a second vignette, prototype capture, or screen-recorded walkthrough.",
-		src: "",
-		poster: "/placeholder-1.jpg",
-		className: "lg:col-span-1 lg:row-span-1",
+		title: "Certificate Title 02",
+		issuer: "Issuing Organization",
+		image: "/placeholder-1.jpg",
 	},
 	{
-		title: "Showreel Highlight 03",
-		description:
-			"Explain what viewers are seeing, what role you played, or what tools and collaborators were involved.",
-		src: "",
-		poster: "/placeholder-1.jpg",
-		className: "lg:col-span-1 lg:row-span-1",
+		title: "Certificate Title 03",
+		issuer: "Issuing Organization",
+		image: "/placeholder-2.jpg",
+	},
+	{
+		title: "Certificate Title 04",
+		issuer: "Issuing Organization",
+		image: "/placeholder-2.jpg",
+	},
+	{
+		title: "Certificate Title 05",
+		issuer: "Issuing Organization",
+		image: "/placeholder-1.jpg",
 	},
 ];

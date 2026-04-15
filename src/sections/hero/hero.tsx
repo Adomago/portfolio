@@ -65,9 +65,14 @@ export default function Hero() {
 			if (!hero) return;
 
 			gsap.set(
-      [badgeRef.current, titleRef.current, descriptionRef.current, actionsRef.current],
-      { autoAlpha: 1 }
-      );
+				[
+					badgeRef.current,
+					titleRef.current,
+					descriptionRef.current,
+					actionsRef.current,
+				],
+				{ autoAlpha: 1 },
+			);
 
 			const splits: SplitText[] = [];
 			context.add(() => {
@@ -183,41 +188,41 @@ export default function Hero() {
 				<div style={{visibility: "hidden"}} ref={badgeRef} className="w-fit">
 					<ShinyBadge>
 						<FrameIcon aria-hidden="true" className="size-3.5" />
-						Your Role Here
+						Computer Science Student · AI Specialization
 					</ShinyBadge>
 				</div>
 				<h1
-				  style={{visibility: "hidden"}}
+					style={{ visibility: "hidden" }}
 					ref={titleRef}
 					className="text-3xl text-center text-foreground font-medium text-balance max-w-3xl"
 				>
-					Add a headline that tells people what you design, build, or launch.
+					Alisandro N. Domingo — Building practical AI and software solutions.
 				</h1>
 				<p
-		      style={{visibility: "hidden"}}
+					style={{ visibility: "hidden" }}
 					ref={descriptionRef}
 					className="text-base md:text-lg text-center text-foreground/70 font-medium text-balance leading-relaxed max-w-xl"
 				>
-					Use this paragraph to summarize your craft, industries served, or the
-					results clients can expect when working with you.
+					I design and develop intelligent, user-focused systems across web and
+					machine learning, from research prototypes to production-ready platforms.
 				</p>
 			</div>
 			<div ref={actionsRef} className="relative z-10  flex items-center gap-2">
 				<Button
-			    style={{visibility: "hidden"}}
+					style={{ visibility: "hidden" }}
 					variant="default"
 					size="md"
 					onClick={() => scrollTo("#contact")}
 				>
-					Start a project
+					Get in touch
 				</Button>
 				<Button
-		      style={{visibility: "hidden"}}
+					style={{ visibility: "hidden" }}
 					variant="secondary"
 					size="md"
 					onClick={() => scrollTo("#works")}
 				>
-					View portfolio
+					View projects
 				</Button>
 			</div>
 

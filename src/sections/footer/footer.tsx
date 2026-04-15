@@ -25,12 +25,35 @@ export default function Footer() {
 					<div className="flex flex-col gap-3">
 						<div className="flex gap-2 items-center text-foreground">
 							<LogoIcon className="size-4" />
-							<p className="text-sm font-medium">Your Name</p>
+							<p className="text-sm font-medium">Alisandro N. Domingo</p>
 						</div>
-						<p className="text-xs text-foreground/70 leading-relaxed max-w-xs">
-							Use this placeholder copy to describe your focus, niche, or the
-							type of projects you love working on.
-						</p>
+						<div className="space-y-1 text-xs text-foreground/70 leading-relaxed max-w-sm">
+							<p>17GS Orchid Tower Oriental Garden Makati, Metro Manila</p>
+							<p>
+								Mobile:{" "}
+								<a className="hover:text-foreground" href="tel:+639763582988">
+									+63 9763582988
+								</a>
+							</p>
+							<p>
+								Email:{" "}
+								<a
+									className="hover:text-foreground"
+									href="mailto:andomingo@mymail.mapua.edu.ph"
+								>
+									andomingo@mymail.mapua.edu.ph
+								</a>
+							</p>
+							<p>
+								Alt Email:{" "}
+								<a
+									className="hover:text-foreground"
+									href="mailto:alisandrodomingo@gmail.com"
+								>
+									alisandrodomingo@gmail.com
+								</a>
+							</p>
+						</div>
 					</div>
 
 					<div className="flex items-center gap-3">
@@ -70,13 +93,9 @@ export default function Footer() {
 			<div className="text-xs text-foreground/70 border-t border-border/80">
 				<div className="w-full md:max-w-5xl mx-auto flex flex-col md:flex-row gap-1 px-4 py-4 md:px-2 items-center justify-between">
 					<p>
-						© {currentYear} Your Name. Update this footer text to match your
-						brand.
+						© {currentYear} Alisandro N. Domingo.
 					</p>
-					<p>
-						Let visitors know where you work from or the type of collaborations
-						you take on.
-					</p>
+					<p>Makati City, Metro Manila · Open to software and AI projects.</p>
 				</div>
 			</div>
 		</footer>
