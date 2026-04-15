@@ -63,8 +63,8 @@ export default function About() {
 							Earlier Education
 						</p>
 						<p className="mt-1 text-sm text-foreground/70">
-							Completed basic and senior high education with honors in Makati,
-							which built a strong foundation before starting university studies.
+							Completed basic and senior high education with honors in Makati
+							before starting university studies.
 						</p>
 					</div>
 				</CardContent>

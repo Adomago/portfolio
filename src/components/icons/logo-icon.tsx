@@ -8,7 +8,6 @@ export function LogoIcon(props: ImgHTMLAttributes<HTMLImageElement>) {
 			alt="Alisandro Domingo logo"
 			width={56}
 			height={56}
-			aria-hidden="true"
 			{...props}
 		/>
 	);
