@@ -203,7 +203,7 @@ export default function Hero() {
 					ref={descriptionRef}
 					className="text-base md:text-lg text-center text-foreground/70 font-medium text-balance leading-relaxed max-w-xl"
 				>
-					Full Stack Developer | AI-Driven Solutions
+					Full Stack Developer | Building AI-Powered Systems
 				</p>
 			</div>
 			<div ref={actionsRef} className="relative z-10  flex items-center gap-2">

@@ -8,7 +8,7 @@ export default function Works() {
     <Section
       id="works"
       title="Projects"
-      description="Selected projects spanning AI applications, full-stack platforms, and public-sector systems."
+      description="Selected projects spanning AI applications, full-stack platforms, and real-world systems."
       className="grid grid-cols-1 sm:grid-cols-2 gap-3"
       badgeText="Featured projects"
       badgeIcon={<GridIcon aria-hidden="true" className="size-3.5" />}

@@ -95,7 +95,7 @@ export default function Footer() {
 					<p>
 						© {currentYear} Alisandro N. Domingo.
 					</p>
-					<p>Makati City, Metro Manila · Open to software and AI projects.</p>
+					<p> Open to collaborations and job opportunities.</p>
 				</div>
 			</div>
 		</footer>

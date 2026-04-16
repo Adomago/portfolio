@@ -87,7 +87,7 @@ export default function ContactFormCard() {
 						<Input
 							label="First Name"
 							name="firstName"
-							placeholder="Jamie"
+							placeholder="John"
 							required
 							wrapperClassName="w-full bg-[color-mix(in_oklch,var(--color-background)_60%,var(--color-card)_40%)]"
 							variant={errors.firstName ? "error" : "default"}
@@ -95,7 +95,7 @@ export default function ContactFormCard() {
 						<Input
 							label="Last Name"
 							name="lastName"
-							placeholder="Smith"
+							placeholder="Doe"
 							required
 							wrapperClassName="w-full bg-[color-mix(in_oklch,var(--color-background)_60%,var(--color-card)_40%)]"
 							variant={errors.lastName ? "error" : "default"}

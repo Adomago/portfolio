@@ -14,32 +14,33 @@ import type { ServiceItem } from "@/sections/services/_constants/services";
 
 // Custom SVG icons shaped like Radix icon components
 const FigmaIcon = (props: React.SVGProps<SVGSVGElement>) => (
-	<svg viewBox="0 0 38 57" fill="none" xmlns="http://www.w3.org/2000/svg" width="15" height="15" {...props}>
-		<path d="M19 28.5A9.5 9.5 0 1 1 28.5 19 9.5 9.5 0 0 1 19 28.5Z" fill="#1ABCFE"/>
-		<path d="M0 47.5A9.5 9.5 0 0 1 9.5 38H19v9.5a9.5 9.5 0 0 1-19 0Z" fill="#0ACF83"/>
-		<path d="M19 0v19h9.5a9.5 9.5 0 0 0 0-19Z" fill="#FF7262"/>
-		<path d="M0 9.5a9.5 9.5 0 0 0 9.5 9.5H19V0H9.5A9.5 9.5 0 0 0 0 9.5Z" fill="#F24E1E"/>
-		<path d="M0 28.5A9.5 9.5 0 0 0 9.5 38H19V19H9.5A9.5 9.5 0 0 0 0 28.5Z" fill="#FF637E"/>
-	</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7.678 7.68" width="64" height="64"><path d="M2.56 7.68A1.28 1.28 0 0 0 3.84 6.4V5.12H2.56a1.28 1.28 0 0 0 0 2.56z" fill="#0acf83"/><path d="M1.28 3.84a1.28 1.28 0 0 1 1.28-1.28h1.28v2.56H2.56a1.28 1.28 0 0 1-1.28-1.28z" fill="#a259ff"/><path d="M1.28 1.28A1.28 1.28 0 0 1 2.559 0h1.28v2.56H2.56a1.28 1.28 0 0 1-1.28-1.28z" fill="#f24e1e"/><path d="M3.84 0h1.28a1.28 1.28 0 0 1 0 2.56H3.84z" fill="#ff7262"/><path d="M6.4 3.84a1.28 1.28 0 0 1-2.56 0 1.28 1.28 0 0 1 2.56 0z" fill="#1abcfe"/></svg>
 );
 
 const VSCodeIcon = (props: React.SVGProps<SVGSVGElement>) => (
-	<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="15" height="15" {...props}>
-		<path d="M74.9 7.3L51.1 31.1 32.6 15.4 7.5 26.2l-.1.1v47.6l.1.1 25.1 10.7 18.5-15.7 23.8 23.8 17.6-7.5V14.8L74.9 7.3zM82.5 64L65 49.9 82.5 36v28zM57.2 49.9L39.5 64V36l17.7 13.9zM7.5 68.9V31.1L28.2 50 7.5 68.9zm32-38.6l18.8 19.7L39.5 69.7V30.3z" fill="#007ACC"/>
-	</svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" {...props}>
+    <path d="M29.01,5.03,23.244,2.254a1.742,1.742,0,0,0-1.989.338L2.38,19.8A1.166,1.166,0,0,0,2.3,21.447c.025.027.05.053.077.077l1.541,1.4a1.165,1.165,0,0,0,1.489.066L28.142,5.75A1.158,1.158,0,0,1,30,6.672V6.605A1.748,1.748,0,0,0,29.01,5.03Z" style={{fill:"#0065a9"}}/>
+    <path d="M29.01,26.97l-5.766,2.777a1.745,1.745,0,0,1-1.989-.338L2.38,12.2A1.166,1.166,0,0,1,2.3,10.553c.025-.027.05-.053.077-.077l1.541-1.4A1.165,1.165,0,0,1,5.41,9.01L28.142,26.25A1.158,1.158,0,0,0,30,25.328V25.4A1.749,1.749,0,0,1,29.01,26.97Z" style={{fill:"#007acc"}}/>
+    <path d="M23.244,29.747a1.745,1.745,0,0,1-1.989-.338A1.025,1.025,0,0,0,23,28.684V3.316a1.024,1.024,0,0,0-1.749-.724,1.744,1.744,0,0,1,1.989-.339l5.765,2.772A1.748,1.748,0,0,1,30,6.6V25.4a1.748,1.748,0,0,1-.991,1.576Z" style={{fill:"#1f9cf0"}}/>
+  </svg>
 );
 
 const SupabaseIcon = (props: React.SVGProps<SVGSVGElement>) => (
-	<svg viewBox="0 0 109 113" fill="none" xmlns="http://www.w3.org/2000/svg" width="15" height="15" {...props}>
-		<path d="M63.7 110.3c-2.8 3.5-8.5 1.6-8.6-2.9L53.6 62H88c6 0 9.4 7 5.7 11.6L63.7 110.3z" fill="url(#sb-a)"/>
-		<path d="M45.3 2.7c2.8-3.5 8.5-1.6 8.6 2.9L55.4 51H21c-6 0-9.4-7-5.7-11.6L45.3 2.7z" fill="#3ECF8E"/>
-		<defs>
-			<linearGradient id="sb-a" x1="53.9" y1="54" x2="94.2" y2="71.3" gradientUnits="userSpaceOnUse">
-				<stop stopColor="#249361"/>
-				<stop offset="1" stopColor="#3ECF8E"/>
-			</linearGradient>
-		</defs>
-	</svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="15" height="15" style={{fill:"none"}} {...props}>
+    <defs>
+      <linearGradient id="sb-paint0" x1="53.97" y1="54.97" x2="94.16" y2="71.83" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.57177306,0,0,0.57177334,0.98590077,-0.12074988)">
+        <stop stopColor="#249361"/>
+        <stop offset="1" stopColor="#3ECF8E"/>
+      </linearGradient>
+      <linearGradient id="sb-paint1" x1="36.16" y1="30.58" x2="54.48" y2="65.08" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.57177306,0,0,0.57177334,0.98590077,-0.12074988)">
+        <stop/>
+        <stop offset="1" stopOpacity="0"/>
+      </linearGradient>
+    </defs>
+    <path d="m 37.41219,62.936701 c -1.634985,2.05896 -4.950068,0.93085 -4.989463,-1.69817 L 31.846665,22.786035 h 25.855406 c 4.683108,0 7.294967,5.409033 4.382927,9.07673 z" style={{fill:"url(#sb-paint0)"}}/>
+    <path d="m 37.41219,62.936701 c -1.634985,2.05896 -4.950068,0.93085 -4.989463,-1.69817 L 31.846665,22.786035 h 25.855406 c 4.683108,0 7.294967,5.409033 4.382927,9.07673 z" style={{fill:"url(#sb-paint1)",fillOpacity:0.2}}/>
+    <path d="m 26.89694,1.0634102 c 1.634986,-2.05918508 4.950125,-0.93090008 4.989521,1.698149 L 32.138899,41.214003 H 6.607076 c -4.6832501,0 -7.29518376,-5.409032 -4.3830007,-9.07673 z" style={{fill:"#3ecf8e"}}/>
+  </svg>
 );
 
 const VercelIcon = (props: React.SVGProps<SVGSVGElement>) => (
@@ -49,9 +50,9 @@ const VercelIcon = (props: React.SVGProps<SVGSVGElement>) => (
 );
 
 const LangChainIcon = (props: React.SVGProps<SVGSVGElement>) => (
-	<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="15" height="15" {...props}>
-		<path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="#1C7ED6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-	</svg>
+  <svg viewBox="0 0 24 24" width="15" height="15" xmlns="http://www.w3.org/2000/svg" {...props}>
+    <path d="M7.531 15.976a7.534 7.534 0 000-10.651L2.206 0A7.537 7.537 0 000 5.326c0 1.996.794 3.913 2.206 5.325l5.325 5.325zM18.674 16.469a7.535 7.535 0 00-10.65 0l5.325 5.325a7.536 7.536 0 0010.651 0l-5.326-5.325zM2.218 21.782a7.536 7.536 0 005.326 2.206v-7.531H.012c0 1.996.795 3.914 2.206 5.325zM20.73 8.595a7.534 7.534 0 00-10.651.001l5.325 5.326 5.326-5.327z" fill="#7FC8FF"/>
+  </svg>
 );
 
 export default function Services() {

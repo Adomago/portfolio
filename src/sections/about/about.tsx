@@ -5,7 +5,6 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const focusAreas = [
     "Computer Science",
-    "Algorithmic Problem-Solving",
     "Artificial Intelligence",
     "Machine Learning",
     "Full-Stack Development",
